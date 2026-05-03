@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: options-pricing-dashboard
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    envVars:
+      - key: DASH_DEBUG
+        value: False
