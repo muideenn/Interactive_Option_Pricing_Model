@@ -1,3 +1,7 @@
+app = dash.Dash(__name__)
+server = app.server
+
+
 import os
 from dotenv import load_dotenv
 load_dotenv()
