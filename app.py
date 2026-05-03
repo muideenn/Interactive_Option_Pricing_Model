@@ -1,7 +1,3 @@
-app = dash.Dash(__name__)
-server = app.server
-
-
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -1471,9 +1467,6 @@ def render_tab(tab, ticker, k_pct, months, opt_type, exercise, rf):
     return html.Div(content, className='content-panel', key=f'{tab}-{ticker}-{K_pct:.2f}-{T:.4f}-{r:.5f}-{opt_type}-{exercise}')
 
 
-
-# app.layout = ...
-# callbacks = ...
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8090))
