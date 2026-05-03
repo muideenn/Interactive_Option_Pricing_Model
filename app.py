@@ -1471,8 +1471,6 @@ def render_tab(tab, ticker, k_pct, months, opt_type, exercise, rf):
     return html.Div(content, className='content-panel', key=f'{tab}-{ticker}-{K_pct:.2f}-{T:.4f}-{r:.5f}-{opt_type}-{exercise}')
 
 
-app = dash.Dash(__name__)
-server = app.server
 
 # app.layout = ...
 # callbacks = ...
